@@ -1,0 +1,15 @@
+* {
+   box-sizing: border-box;
+   margin: auto;
+}
+
+body {
+   padding-bottom: 200px;
+}
+
+#name {
+   text-align: center;
+   color: rgb(243, 124, 12);
+   font-size: 2rem;
+   margin-bottom: 20px;
+}
