@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bài 14</title>
+   <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<style>
+   div {
+      width: 700px;
+      margin-top: 100px;
+      box-shadow: 0 0 12px #888;
+      padding: 20px;
+   }
+
+   p {
+      margin: 16px 0;
+   }
+
+   label {
+      width: 180px;
+      display: inline-block;
+   }
+</style>
+
+<body>
+   <div>
+      <h1>Contacts Us</h1>
+      <p>Use the following form to send a message to Example Cafe</p>
+      <form action="">
+         <label for="email">Your email</label>
+         <input type="text" id="email" name="email"><br>
+         <label for="message">Message</label>
+         <textarea name="message" id="message" cols="30" rows="10" style="vertical-align: middle;"></textarea><br>
+
+         <label for="hereCheckbox">How did you hear of us?</label>
+         <select name="hereCheckbox" id="hereCheckbox">
+            <option value=" Google">Google</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Twitter">Twitter</option>
+         </select><br>
+         <label for="news">Newsletter</label>
+         <input type="checkbox" name="news" id="news">
+         <span>Ensure this box is checked if you would like to receive email updates</span>
+         <input type="submit">
+      </form>
+   </div>
+</body>
+
+</html>

@@ -6,12 +6,40 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Bài 13</title>
+   <link rel="stylesheet" href="../css/base.css">
 </head>
+
+<style>
+   form {
+      margin-top: 50px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 12px #888;
+   }
+
+   input {
+      margin-bottom: 10px;
+   }
+</style>
 
 <body>
    <form action="">
-      <label for="">Name:</label>
-      <input type="text">
+      <label for="fname">Name:</label><br>
+      <input type="text" autocomplete="on" id="fname" name="fname"><br>
+
+      <label for="ftelephone">Telephone Number:</label><br>
+      <input type="tel" id="ftelephone" name="ftelephone"><br>
+
+      <label for="femail">Email:</label><br>
+      <input type="email" id="femail" name="femail"><br>
+
+      <label for="fcolor">Favorite Color:</label><br>
+      <input type="color" id="ftelephone" name="ftelephone"><br>
+
+      <label for="fbirth">Date of Birth:</label><br>
+      <input type="date" id="fbirth" name="fbirth"><br>
+
+      <input type="submit" value="Submit">
    </form>
 </body>
 
