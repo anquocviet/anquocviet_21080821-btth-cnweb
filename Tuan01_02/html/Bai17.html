@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bài 17</title>
+   <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<style>
+   div {
+      width: 800px;
+      padding: 12px;
+      margin-top: 16px;
+      box-shadow: 0 0 12px #888;
+      background-color: #F7D078;
+   }
+
+   h1 {
+      text-align: center;
+   }
+
+   input:not([type="checkbox"], [type="submit"], [type="reset"]),
+   textarea {
+      margin-bottom: 16px;
+   }
+</style>
+
+<body>
+   <div>
+      <h1>Survey Form</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, voluptate cupiditate! Architecto eligendi
+         reprehenderit eaque, earum culpa quos natus necessitatibus eum maiores magnam, cumque voluptates debitis ipsa
+         distinctio dolorum Consequuntur</p>
+      <form action="">
+         <ol>
+            <li>
+               <label for="name">What is your name?</label><br>
+               <input type="text" size="40" name="name" id="name">
+            </li>
+            <li>
+               <label for="">What is your date of birth?</label><br>
+               <label for="month">Month: </label>
+               <select name="month" id="month">
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+               </select>
+               <label for="day">Date: </label>
+               <input type="number" name="day" id="day" min="1" max="31">
+               <label for="year">Year: </label>
+               <input type="number" name="year" id="year" min="1" style="width: 60px;">
+
+
+            </li>
+            <li>
+               <label for="addressMail">What is your mailing address (if you would like to have a hard copy of our
+                  catalog send to
+                  you)?</label>
+               <textarea name="addressMail" id="addressMail" cols="60" rows="4">Number/P.O. Box/Route: 
+Street/Avenue/Road:
+City:
+State/Zip:</textarea>
+            </li>
+            <li>
+               <label for="email">What is your email address?</label><br>
+               <input type="email" name="email" id="email">
+            </li>
+            <li>
+               <label for="">Have you viewed our online product catalog?</label><br>
+               <input type="radio" name="answerViewed" id="yes" checked><label for="yes">Yes</label>
+               <input type="radio" name="answerViewed" id="no"><label for="no">No</label>
+            </li>
+            <li>
+               <label for="">If so, what product(s), besides the one you are ordering, might you be interested in
+                  purchasing in the future? (Check all the apply.)</label><br>
+               <input type="checkbox" name="products" id="vcr"><label for="vcr">VCR</label><br>
+               <input type="checkbox" name="products" id="tv"><label for="tv">Big Screen TV</label><br>
+               <input type="checkbox" name="products" id="audio"><label for="audio">Audio Equipment</label><br>
+               <input type="checkbox" name="products" id="video"><label for="video">Video Equipment</label><br>
+               <input type="checkbox" name="products" id="camera"><label for="camera">Camera Equipment</label><br>
+               <input type="checkbox" name="products" id="other"><label for="other">Other</label>
+               <input type="text" value="Please List:" name="products" id="inputOther">
+            </li>
+            <li>
+               <label for="question">Do you have any question, comments or suggestions before proceeding to the Other
+                  Form?</label>
+               <textarea name="question" id="question" cols="50" rows="5">Your Input:</textarea>
+            </li>
+         </ol>
+         <p style="text-align: center;">
+            <input type="submit" value="Send Form">
+            <input type="reset" value="Clear Form">
+         </p>
+      </form>
+
+   </div>
+</body>
+
+</html>
