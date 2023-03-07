@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bài 2</title>
+</head>
+
+<style>
+   .textEffect div>p {
+      display: inline-block;
+      padding: 4px 28px;
+   }
+
+   .textEffect>p {
+      text-align: center;
+      padding: 8px;
+      background-color: #821D7B;
+   }
+
+   .colorful {
+      color: #0a1d0a;
+      background: #FFFCA8;
+      text-shadow: 2px 2px 1px #6d1d03, -3px -3px 1px #9c9c9c;
+   }
+
+   .inset {
+      color: #616161;
+      background: #bababa;
+      text-shadow: #8a14d9 1px 1px 0;
+   }
+
+   .double {
+      text-shadow: -1px -8px 1px rgba(233, 14, 160, 0.8);
+   }
+
+   .glossy {
+      color: #FFFFFF;
+      background: #912C22;
+      text-shadow: 0 0 10px #FFFFFF;
+   }
+
+   .grunge {
+      color: #92a5de;
+      background: #FF0000;
+      text-shadow: 0px 0px 0 #899CD5, 1px 1px 0 #8194CD, 2px 2px 0 #788BC4, 3px 3px 0 #6F82BB, 4px 4px 0 #677AB3, 5px 5px 0 #5E71AA, 6px 6px 0 #5568A1, 7px 7px 0 #4C5F98, 8px 8px 0 #445790, 9px 9px 0 #3B4E87, 10px 10px 0 #32457E;
+   }
+
+   .neon {
+      color: #FFFFFF;
+      background: #232323;
+      text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+   }
+</style>
+
+<body>
+   <div class="container" style="width:500px; height:300px; background-color: rgba(128, 128, 128, 0.3); margin: auto;">
+
+      <p style="color: red">Thiết lập chế độ thụt đầu dòng cho 1 đoạn văn bản. Thuộc tính này có thể gán giá trị là tỉ
+         lệ % hoặc một số cụ
+         thể. Thiết lập chế đọ thụt lề đầu dòng cho 1 đoạn văn bản. Thuộc tính này có thể gán giá trị là tỉ lệ % hoặc
+         một số cụ thể.</p>
+      <p style="color: blue; text-align: right;"> Thuộc tính text-align: right; dùng để canh lề phải đoạn văn bản</p>
+      <p style="color: green; text-align: center;"> Thuộc tính text-align: center; dùng để canh lề giữa đoạn văn bản</p>
+      <p style="color: brown;"> Thuộc tính text-align: left; dùng để canh lề trái đoạn văn bản</p>
+      <p style="text-decoration: line-through; color: pink;"> Thuộc tính text-decoration: line through; sẽ gạch ngang
+         đoạn
+         văn bản</p>
+      <p style="text-decoration: overline; color: red;"> Thuộc tính text-decoration: over line; sẽ gạch ngang trên
+         đoạn văn bản</p>
+      <p style="color: blue; text-decoration: blink; text-shadow: 4px 4px 8px blue;">Thuộc tính text-decoration: blink;
+         sẽ tjao hiệu ứng blink cho
+         đoạn văn bản + thuộc tính text-shadow: 4px 4px
+         8px blue; tạo bóng cho chữ</p>
+
+   </div>
+
+   <div class="textEffect" style="width: 500px; box-shadow: 0 0 12px #888; margin: auto;">
+      <div>
+         <p class="colorful">Colorful Style</p>
+         <p class="inset">Inset Effect</sp>
+         <p class="double">Double Font</p>
+         <p class="glossy">Glossy Style</p>
+         <p class="grunge">Grunge Style</p>
+         <p class="neon">Neon Glow</p>
+      </div>
+      <p>Cool CSS Text Effects</p>
+   </div>
+</body>
+
+</html>
