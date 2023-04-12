@@ -13,23 +13,23 @@
         box-sizing: border-box;
         margin: auto;
     }
-    
+
     body {
         background-color: #94ced6;
     }
-    
+
     .calculator {
         margin-top: 100px;
         width: 300px;
         height: 250px;
     }
-    
+
     .calculator__keys {
         height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    
+
     .calculator__display {
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 8px 8px 0 0;
@@ -42,22 +42,22 @@
         justify-content: flex-end;
         font-size: 24px;
     }
-    
+
     button {
         width: 100%;
         height: 100%;
-        border: 1px solid #0e0d0d;
+        border: 0.5px solid #ccc;
     }
-    
+
     button:active {
         background-color: #b8b8b8;
     }
-    
-    .key--operator {
+
+    .key-operator {
         background-color: #c5c5c5;
     }
-    
-    .key--equal {
+
+    .key-equal {
         grid-column: 4 / 5;
         grid-row: 2 / 6;
         background-color: #f88966;
@@ -67,12 +67,12 @@
 
 <body>
     <div class="calculator">
-        <div class="calculator__display">0</div>
+        <div class="calculator__display"></div>
         <div class="calculator__keys">
-            <button class="key--operator" data-action="add">+</button>
-            <button class="key--operator" data-action="subtract">-</button>
-            <button class="key--operator" data-action="multiply">&times;</button>
-            <button class="key--operator" data-action="divide">÷</button>
+            <button class="key-operator">+</button>
+            <button class="key-operator">-</button>
+            <button class="key-operator">x</button>
+            <button class="key-operator">÷</button>
             <button>7</button>
             <button>8</button>
             <button>9</button>
@@ -83,12 +83,12 @@
             <button>2</button>
             <button>3</button>
             <button style="border-bottom-left-radius: 8px;">0</button>
-            <button data-action="decimal">.</button>
-            <button data-action="clear">AC</button>
-            <button class="key--equal" data-action="calculate">=</button>
+            <button>.</button>
+            <button class="clear">AC</button>
+            <button class="key-equal" class="calculate">=</button>
         </div>
     </div>
-
+    <script src="./main.js"></script>
 </body>
 
 </html>
